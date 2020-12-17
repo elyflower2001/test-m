@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondadori test - Elisa Citterio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
+        <main>
+            <section class="section-boxes">
+                <div class="section-boxes__box">
+                    <p>1</p>
+                </div>
+                <div class="section-boxes__box">
+                    <p>2</p>
+                </div>
+                <div class="section-boxes__box">
+                    <p>3</p>
+                </div>
+            </section>
+
+            <section class="section-topics">
+
+                <div class="topic topic--storia">
+                    <a class="topic__content" href="#">
+                        <div class="topic__text">Storia</div>
+                        <div class="topic__arrow">
+                            <div class="topic__arrow-line"></div>
+                            <div class="topic__arrow-right"></div>
+                        </div>
+                    </a> 
+                </div>
+                <div class="topic topic--arte">
+                    <a class="topic__content" href="#">
+                        <div class="topic__text"><span class="topic__big-text">A</span>rte</div>
+                        <div class="topic__arrow">
+                            <div class="topic__arrow-line"></div>
+                            <div class="topic__arrow-right"></div>
+                        </div>
+                    </a>
+                </div>
+
+            </section>
+
+            <section class="section-slider">
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__title">Slide 1 - Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <div class="swiper-slide__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar, justo nec dictum pulvinar, tortor lectus egestas est, ac laoreet magna ante eget magna. In sed dignissim nulla, quis consectetur dui.</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__title">Slide 2 - Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <div class="swiper-slide__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar, justo nec dictum pulvinar, tortor lectus egestas est, ac laoreet magna ante eget magna. In sed dignissim nulla, quis consectetur dui.</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__title">Slide 3 - Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <div class="swiper-slide__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar, justo nec dictum pulvinar, tortor lectus egestas est, ac laoreet magna ante eget magna. In sed dignissim nulla, quis consectetur dui.</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__title">Slide 4 - Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <div class="swiper-slide__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar, justo nec dictum pulvinar, tortor lectus egestas est, ac laoreet magna ante eget magna. In sed dignissim nulla, quis consectetur dui.</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__title">Slide 5 - Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <div class="swiper-slide__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar, justo nec dictum pulvinar, tortor lectus egestas est, ac laoreet magna ante eget magna. In sed dignissim nulla, quis consectetur dui.</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__title">Slide 6 - Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <div class="swiper-slide__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar, justo nec dictum pulvinar, tortor lectus egestas est, ac laoreet magna ante eget magna. In sed dignissim nulla, quis consectetur dui.</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__title">Slide 7 - Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                            <div class="swiper-slide__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pulvinar, justo nec dictum pulvinar, tortor lectus egestas est, ac laoreet magna ante eget magna. In sed dignissim nulla, quis consectetur dui</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination-container">
+                    <div class="swiper-pagination"></div>
+                </div>
+                
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+                <script>
+                    var mySwiper = new Swiper('.swiper-container', {
+                        direction: 'horizontal',
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+
+                        breakpoints: {
+                            700: {
+                            slidesPerView: 3,
+                            spaceBetween: 20,
+                            },
+                            1200: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                            }
+                        },
+            
+                        // Pagination
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true
+                        },
+            
+                        // Navigation arrows
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        }
+                    });
+                </script>
+
+            </section>
+            <section class="section-form">
+                <form action="#" class="form">
+                    <div class="form__group">
+                        <input type="checkbox" id="letteratura" class="form__checkbox" name="letteratura">
+                        <label for="letteratura" class="form__label"><span></span>Letteratura Italiana</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="checkbox" id="storia" class="form__checkbox" name="storia">
+                        <label for="storia" class="form__label"><span></span>Storia</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="checkbox" id="arte" class="form__checkbox" name="arte">
+                        <label for="arte" class="form__label"><span></span>Arte</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="checkbox" id="matematica" class="form__checkbox" name="matematica">
+                        <label for="matematica" class="form__label"><span></span>Matematica</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="checkbox" id="filosofia" class="form__checkbox" name="filosofia">
+                        <label for="filosofia" class="form__label"><span></span>Filosofia</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="checkbox" id="chimica" class="form__checkbox" name="chimica">
+                        <label for="chimica" class="form__label"><span></span>Chimica</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="checkbox" id="latino" class="form__checkbox" name="latino">
+                        <label for="latino" class="form__label"><span></span>Latino</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="checkbox" id="fisica" class="form__checkbox" name="fisica">
+                        <label for="fisica" class="form__label"><span></span>Fisica</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="checkbox" id="scienze" class="form__checkbox" name="scienze">
+                        <label for="scienze" class="form__label"><span></span>Scienze</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="checkbox" id="italiano" class="form__checkbox" name="italiano">
+                        <label for="italiano" class="form__label"><span></span>Italiano</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="checkbox" id="biologia" class="form__checkbox" name="biologia">
+                        <label for="biologia" class="form__label"><span></span>Biologia</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="checkbox" id="geografia" class="form__checkbox" name="geografia">
+                        <label for="geografia" class="form__label"><span></span>Geografia</label>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script>
+        window.onscroll = function() {scrollBar()};
+    </script>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
