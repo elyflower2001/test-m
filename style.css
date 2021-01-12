@@ -352,25 +352,30 @@ section {
 }
 
 .form__label {
-    font-size:15px;
-    line-height:24px;
+    font-size: 15px;
+    position: relative;
+    padding-left: 30px;
+    line-height :19px;
 }
 
-.form__label span::after {
+.form__label::before {
     content: ' ';
-    display:inline-block;
-    width:12px;
-    height:12px;
-    background-color:white;
-    border:1px solid #ded9d3;
-    margin-right:15px;
-    border-radius: 2px;
-    line-height: 9px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border: 1px solid #ded9d3;
+    border-radius: 3px;
+    position: absolute;
+    cursor: pointer;
+    left:0;
+    top:0;
 }
 
-.form__checkbox:checked + .form__label span::after { 
+.form__checkbox:checked + .form__label::before { 
     background-color:#7ab700;
-    content: "\2714";
-    color:#fff;
-    line-height: 9px;
+    background-image: url(img/checked.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    border-radius: 3px;
 }
